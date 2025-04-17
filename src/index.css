@@ -1,0 +1,73 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f9;
+  color: #333;
+}
+header {
+  background: linear-gradient(135deg, #4a6fa5, #166088);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+.container {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+.search-box {
+  display: flex;
+  margin-bottom: 1rem;
+}
+input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+button {
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.site-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #4a6fa5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  margin-right: 10px;
+}
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-right: 5px;
+  color: white;
+}
+.badge-safe { background-color: #28a745; }
+.badge-warning { background-color: #ffc107; color: #333; }
+.badge-danger { background-color: #dc3545; }
+#result, #error, #loader { display: none; }

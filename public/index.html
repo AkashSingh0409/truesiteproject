@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueSite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TrueSite</h1>
+        <p>Get information about any website</p>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <div class="search-box">
+                <input type="text" id="site-input" placeholder="Enter website URL (e.g., google.com)" />
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="loader">Loading website information...</div>
+            <div id="error"></div>
+        </div>
+        
+        <div id="result" class="card">
+            <div class="site-header">
+                <div class="site-icon" id="site-icon">G</div>
+                <div>
+                    <h2 id="site-name">Website</h2>
+                    <div id="site-url">website.com</div>
+                    <div id="safety-badges"></div>
+                </div>
+            </div>
+            <div id="site-info"></div>
+            <div>
+                <h3>Technical Info</h3>
+                <p id="tech-info"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
