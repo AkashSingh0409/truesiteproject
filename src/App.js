@@ -95,6 +95,40 @@ function App() {
                 {siteInfo.founded && <p><strong>Founded:</strong> {siteInfo.founded}</p>}
                 {siteInfo.founders && <p><strong>Founders:</strong> {siteInfo.founders}</p>}
                 {siteInfo.headquarters && <p><strong>Headquarters:</strong> {siteInfo.headquarters}</p>}
+                {siteInfo.history && (
+                  <div className="history-section">
+                    <h4>History</h4>
+                    <p>{siteInfo.history}</p>
+                  </div>
+                )}
+                {siteInfo.features && (
+                  <div className="features-section">
+                    <h4>Key Features</h4>
+                    <ul>
+                      {siteInfo.features.map((feature, index) => (
+                        <li key={index}>{feature}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {siteInfo.marketShare && (
+                  <div className="stats-section">
+                    <h4>Company Statistics</h4>
+                    <p><strong>Market Share:</strong> {siteInfo.marketShare}</p>
+                    <p><strong>Employees:</strong> {siteInfo.employees}</p>
+                    <p><strong>Revenue:</strong> {siteInfo.revenue}</p>
+                  </div>
+                )}
+                {siteInfo.notableAchievements && (
+                  <div className="achievements-section">
+                    <h4>Notable Achievements</h4>
+                    <ul>
+                      {siteInfo.notableAchievements.map((achievement, index) => (
+                        <li key={index}>{achievement}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -103,7 +137,7 @@ function App() {
               <div className="tech-content">
                 <p><strong>Server:</strong> {siteInfo.server}</p>
                 <p><strong>IP Address:</strong> {siteInfo.ip}</p>
-                <p><strong>Technologies:</strong> {siteInfo.technologies.join(', ')}</p>
+                <p><strong>Technologies:</strong> {Array.isArray(siteInfo.technologies) ? siteInfo.technologies.join(', ') : siteInfo.technologies}</p>
                 <p><strong>Performance:</strong> {siteInfo.performance}</p>
               </div>
             </div>

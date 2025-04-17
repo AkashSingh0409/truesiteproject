@@ -13,7 +13,28 @@ const websites = {
         founded: "September 4, 1998",
         founders: "Larry Page and Sergey Brin",
         headquarters: "Mountain View, California, United States",
-        safety: "safe"
+        safety: "safe",
+        history: "Google was founded in 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University. The company's mission is to organize the world's information and make it universally accessible and useful.",
+        features: [
+            "Search Engine",
+            "Gmail",
+            "Google Maps",
+            "Google Drive",
+            "YouTube",
+            "Android OS",
+            "Chrome Browser",
+            "Google Cloud"
+        ],
+        technologies: ["BigQuery", "TensorFlow", "Kubernetes", "Flutter", "Angular"],
+        marketShare: "92.47% of global search engine market",
+        employees: "156,500+ (2023)",
+        revenue: "$282.8 billion (2023)",
+        notableAchievements: [
+            "Revolutionized internet search with PageRank algorithm",
+            "Created Android, the world's most popular mobile OS",
+            "Developed self-driving car technology",
+            "Pioneered cloud computing services"
+        ]
     },
     "facebook.com": {
         name: "Facebook",
@@ -21,7 +42,57 @@ const websites = {
         founded: "February 4, 2004",
         founders: "Mark Zuckerberg, Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes",
         headquarters: "Menlo Park, California, United States",
-        safety: "safe"
+        safety: "safe",
+        history: "Facebook was launched in 2004 by Mark Zuckerberg and his college roommates. Originally called 'TheFacebook', it started as a social network for Harvard students before expanding to other universities and eventually the general public.",
+        features: [
+            "News Feed",
+            "Messenger",
+            "Groups",
+            "Events",
+            "Marketplace",
+            "Stories",
+            "Live Video",
+            "Watch"
+        ],
+        technologies: ["React", "GraphQL", "Hack", "HHVM", "React Native"],
+        marketShare: "2.91 billion monthly active users (2023)",
+        employees: "77,000+ (2023)",
+        revenue: "$134.9 billion (2023)",
+        notableAchievements: [
+            "Revolutionized social networking",
+            "Acquired Instagram and WhatsApp",
+            "Pioneered social media advertising",
+            "Developed Oculus VR technology"
+        ]
+    },
+    "twitter.com": {
+        name: "Twitter",
+        description: "Twitter (X) is a social networking service where users post and interact with messages known as tweets.",
+        founded: "March 21, 2006",
+        founders: "Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams",
+        headquarters: "San Francisco, California, United States",
+        safety: "safe",
+        history: "Twitter was created in 2006 by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams. The platform was initially developed as a side project within Odeo, a podcasting company.",
+        features: [
+            "Tweets",
+            "Retweets",
+            "Likes",
+            "Follows",
+            "Trends",
+            "Lists",
+            "Spaces",
+            "Bookmarks"
+        ],
+        technologies: ["Ruby on Rails", "Scala", "Java", "JavaScript", "Python"],
+        marketShare: "556 million monthly active users (2023)",
+        employees: "1,500+ (2023)",
+        revenue: "$4.4 billion (2023)",
+        notableAchievements: [
+            "Revolutionized real-time information sharing",
+            "Created the hashtag phenomenon",
+            "Influenced global political discourse",
+            "Pioneered microblogging"
+        ]
     }
 };
 

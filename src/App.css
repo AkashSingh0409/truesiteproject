@@ -206,9 +206,65 @@ h3 {
 
 .info-content, .tech-content {
   background-color: #f8fafc;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: var(--border-radius);
   font-size: 0.95rem;
+}
+
+.history-section,
+.features-section,
+.stats-section,
+.achievements-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.features-section ul,
+.achievements-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-section li,
+.achievements-section li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.features-section li:before {
+  content: "•";
+  position: absolute;
+  left: 0.5rem;
+  color: var(--primary-color);
+}
+
+.achievements-section li:before {
+  content: "★";
+  position: absolute;
+  left: 0.5rem;
+  color: var(--primary-color);
+}
+
+.stats-section p {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats-section strong {
+  color: var(--text-primary);
 }
 
 .info-content p, .tech-content p {
@@ -266,5 +322,22 @@ h3 {
 
   .site-icon {
     margin: 0 0 1rem 0;
+  }
+
+  .info-content, .tech-content {
+    padding: 1rem;
+  }
+
+  .history-section,
+  .features-section,
+  .stats-section,
+  .achievements-section {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  .features-section li,
+  .achievements-section li {
+    padding-left: 1.25rem;
   }
 }
